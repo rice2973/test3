@@ -156,14 +156,12 @@
                 }
             }
             
-            const classPrediction2 =
-                prediction2[j].className + ": " + prediction2[j].probability.toFixed(2);
-            labelContainer.childNodes[j].innerHTML = classPrediction2;
         }
-        if (ank == "何もっ" || tal == " "){
+        if (ank == "何もっ" || tal == "なかった"){
             ank = "何もっ"
             tal = "なかった"
         }
+
         document.getElementById("debuk").textContent=ank + tal
     }
 </script>
