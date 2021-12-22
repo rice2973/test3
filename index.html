@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <tittle>checkin</title>
+    <tittle>checkcheck</title>
 </head>
 <body>
 <div>Teachable Machine Image Model</div>
@@ -74,111 +74,60 @@
         const prediction2 = await model2.predict(webcam.canvas);
         ank = "何もっ"
         tal = "なかった"
-        const A1 = prediction[0].probability.toFixed(2) * prediction2[0].probability.toFixed(2);
-        const A2 = prediction[0].probability.toFixed(2) * prediction2[1].probability.toFixed(2);
-        const A3 = prediction[0].probability.toFixed(2) * prediction2[2].probability.toFixed(2);
-        const A4 = prediction[0].probability.toFixed(2) * prediction2[3].probability.toFixed(2);
-        const A5 = prediction[0].probability.toFixed(2) * prediction2[4].probability.toFixed(2);
-        const A6 = prediction[0].probability.toFixed(2) * prediction2[5].probability.toFixed(2);
-        const A7 = prediction[0].probability.toFixed(2) * prediction2[6].probability.toFixed(2);
-        const A8 = prediction[0].probability.toFixed(2) * prediction2[7].probability.toFixed(2);
-        const A9 = prediction[0].probability.toFixed(2) * prediction2[8].probability.toFixed(2);
-        const A10 = prediction[0].probability.toFixed(2) * prediction2[9].probability.toFixed(2);
-        const AJ = prediction[0].probability.toFixed(2) * prediction2[10].probability.toFixed(2);
-        const AQ = prediction[0].probability.toFixed(2) * prediction2[11].probability.toFixed(2);
-        const AK = prediction[0].probability.toFixed(2) * prediction2[12].probability.toFixed(2);
-        const B1 = prediction[1].probability.toFixed(2) * prediction2[0].probability.toFixed(2);
-        const B2 = prediction[1].probability.toFixed(2) * prediction2[1].probability.toFixed(2);
-        const B3 = prediction[1].probability.toFixed(2) * prediction2[2].probability.toFixed(2);
-        const B4 = prediction[1].probability.toFixed(2) * prediction2[3].probability.toFixed(2);
-        const B5 = prediction[1].probability.toFixed(2) * prediction2[4].probability.toFixed(2);
-        const B6 = prediction[1].probability.toFixed(2) * prediction2[5].probability.toFixed(2);
-        const B7 = prediction[1].probability.toFixed(2) * prediction2[6].probability.toFixed(2);
-        const B8 = prediction[1].probability.toFixed(2) * prediction2[7].probability.toFixed(2);
-        const B9 = prediction[1].probability.toFixed(2) * prediction2[8].probability.toFixed(2);
-        const B10 = prediction[1].probability.toFixed(2) * prediction2[9].probability.toFixed(2);
-        const BJ = prediction[1].probability.toFixed(2) * prediction2[10].probability.toFixed(2);
-        const BQ = prediction[1].probability.toFixed(2) * prediction2[11].probability.toFixed(2);
-        const BK = prediction[1].probability.toFixed(2) * prediction2[12].probability.toFixed(2);
-        const C1 = prediction[2].probability.toFixed(2) * prediction2[0].probability.toFixed(2);
-        const C2 = prediction[2].probability.toFixed(2) * prediction2[1].probability.toFixed(2);
-        const C3 = prediction[2].probability.toFixed(2) * prediction2[2].probability.toFixed(2);
-        const C4 = prediction[2].probability.toFixed(2) * prediction2[3].probability.toFixed(2);
-        const C5 = prediction[2].probability.toFixed(2) * prediction2[4].probability.toFixed(2);
-        const C6 = prediction[2].probability.toFixed(2) * prediction2[5].probability.toFixed(2);
-        const C7 = prediction[2].probability.toFixed(2) * prediction2[6].probability.toFixed(2);
-        const C8 = prediction[2].probability.toFixed(2) * prediction2[7].probability.toFixed(2);
-        const C9 = prediction[2].probability.toFixed(2) * prediction2[8].probability.toFixed(2);
-        const C10 = prediction[2].probability.toFixed(2) * prediction2[9].probability.toFixed(2);
-        const CJ = prediction[2].probability.toFixed(2) * prediction2[10].probability.toFixed(2);
-        const CQ = prediction[2].probability.toFixed(2) * prediction2[11].probability.toFixed(2);
-        const CK = prediction[2].probability.toFixed(2) * prediction2[12].probability.toFixed(2);
-        const D1 = prediction[3].probability.toFixed(2) * prediction2[0].probability.toFixed(2);
-        const D2 = prediction[3].probability.toFixed(2) * prediction2[1].probability.toFixed(2);
-        const D3 = prediction[3].probability.toFixed(2) * prediction2[2].probability.toFixed(2);
-        const D4 = prediction[3].probability.toFixed(2) * prediction2[3].probability.toFixed(2);
-        const D5 = prediction[3].probability.toFixed(2) * prediction2[4].probability.toFixed(2);
-        const D6 = prediction[3].probability.toFixed(2) * prediction2[5].probability.toFixed(2);
-        const D7 = prediction[3].probability.toFixed(2) * prediction2[6].probability.toFixed(2);
-        const D8 = prediction[3].probability.toFixed(2) * prediction2[7].probability.toFixed(2);
-        const D9 = prediction[3].probability.toFixed(2) * prediction2[8].probability.toFixed(2);
-        const D10 = prediction[3].probability.toFixed(2) * prediction2[9].probability.toFixed(2);
-        const DJ = prediction[3].probability.toFixed(2) * prediction2[10].probability.toFixed(2);
-        const DQ = prediction[3].probability.toFixed(2) * prediction2[11].probability.toFixed(2);
-        const DK = prediction[3].probability.toFixed(2) * prediction2[12].probability.toFixed(2);
-        
-        lA1 = A1.toFixed(2);
-        lA2 = A2.toFixed(2);
-        lA3 = A3.toFixed(2);
-        lA4 = A4.toFixed(2);
-        lA5 = A5.toFixed(2);
-        lA6 = A6.toFixed(2);
-        lA7 = A7.toFixed(2);
-        lA8 = A8.toFixed(2);
-        lA9 = A9.toFixed(2);
-        lA10 = A10.toFixed(2);
-        lAJ = AJ.toFixed(2);
-        lAQ = AQ.toFixed(2);
-        lAK = AK.toFixed(2);
-        lB1 = B1.toFixed(2);
-        lB2 = B2.toFixed(2);
-        lB3 = B3.toFixed(2);
-        lB4 = B4.toFixed(2);
-        lB5 = B5.toFixed(2);
-        lB6 = B6.toFixed(2);
-        lB7 = B7.toFixed(2);
-        lB8 = B8.toFixed(2);
-        lB9 = B9.toFixed(2);
-        lB10 = B10.toFixed(2);
-        lBJ = BJ.toFixed(2);
-        lBQ = BQ.toFixed(2);
-        lBK = BK.toFixed(2);
-        lC1 = C1.toFixed(2);
-        lC2 = C2.toFixed(2);
-        lC3 = C3.toFixed(2);
-        lC4 = C4.toFixed(2);
-        lC5 = C5.toFixed(2);
-        lC6 = C6.toFixed(2);
-        lC7 = C7.toFixed(2);
-        lC8 = C8.toFixed(2);
-        lC9 = C9.toFixed(2);
-        lC10 = C10.toFixed(2);
-        lCJ = CJ.toFixed(2);
-        lCQ = CQ.toFixed(2);
-        lCK = CK.toFixed(2);
-        lD1 = D1.toFixed(2);
-        lD2 = D2.toFixed(2);
-        lD3 = D3.toFixed(2);
-        lD4 = D4.toFixed(2);
-        lD5 = D5.toFixed(2);
-        lD6 = D6.toFixed(2);
-        lD7 = D7.toFixed(2);
-        lD8 = D8.toFixed(2);
-        lD9 = D9.toFixed(2);
-        lD10 = D10.toFixed(2);
-        lDJ = DJ.toFixed(2);
-        lDQ = DQ.toFixed(2);
-        lDK = DK.toFixed(2);
+        var ABCD = 
+            [
+            [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0],
+            [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0],
+            [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0],
+            [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+            ];
+        let lABCD =
+            [
+            ["", "", "", "", "", "", "", "", "", "", "", "", ""],
+            ["", "", "", "", "", "", "", "", "", "", "", "", ""],
+            ["", "", "", "", "", "", "", "", "", "", "", "", ""],
+            ["", "", "", "", "", "", "", "", "", "", "", "", ""]
+            ]
+        for (i = 0; i < 4; i++)
+        {
+            for (j = 0; j < 13; j++)
+            {
+                ABCD[i][j] = prediction[i].probability.toFixed(2) * prediction2[j].probability.toFixed(2);
+                if (ABCD[i][j] < 0.2)
+                {
+                    lABCD[i][j] = "#000000";
+                }
+                else if (ABCD[i][j] >= 0.2 && ABCD[i][j] < 0.3)
+                {
+                    lABCD[i][j] = "#696969";
+                }
+                else if (ABCD[i][j] >= 0.3 && ABCD[i][j] < 0.4)
+                {
+                    lABCD[i][j] = "#808080";
+                }else if (ABCD[i][j] >= 0.4 && ABCD[i][j] < 0.5)
+                {
+                    lABCD[i][j] = "#a9a9a9";
+                }else if (ABCD[i][j] >= 0.5 && ABCD[i][j] < 0.6)
+                {
+                    lABCD[i][j] = "#c0c0c0";
+                }else if (ABCD[i][j] >= 0.6 && ABCD[i][j] < 0.7)
+                {
+                    lABCD[i][j] = "#d3d3d3";
+                }
+                else if (ABCD[i][j] >= 0.7 && ABCD[i][j] < 0.8)
+                {
+                    lABCD[i][j] = "#dcdcdc";
+                }
+                else if (ABCD[i][j] >= 0.8 && ABCD[i][j] < 0.9)
+                {
+                    lABCD[i][j] = "#f5f5f5";
+                }
+                else if (ABCD[i][j] >= 0.9)
+                {
+                    lABCD[i][j] = "#ffffff";
+                }
+            }
+        }
         for (i = 0; i < 4; i++)
         {
             if (prediction[i].probability.toFixed(2) > 0.8)
@@ -274,42 +223,128 @@
         }
 
         document.getElementById("debuk").textContent=ank + tal
+        document.getElementById("A1").textContent= "bgcolor=" + "'" + lABCD[0][0] + "'"
+        document.getElementById("A2").textContent= "bgcolor=" + "'" + lABCD[0][1] + "'"
+        document.getElementById("A3").textContent= "bgcolor=" + "'" + lABCD[0][2] + "'"
+        document.getElementById("A4").textContent= "bgcolor=" + "'" + lABCD[0][3] + "'"
+        document.getElementById("A5").textContent= "bgcolor=" + "'" + lABCD[0][4] + "'"
+        document.getElementById("A6").textContent= "bgcolor=" + "'" + lABCD[0][5] + "'"
+        document.getElementById("A7").textContent= "bgcolor=" + "'" + lABCD[0][6] + "'"
+        document.getElementById("A8").textContent= "bgcolor=" + "'" + lABCD[0][7] + "'"
+        document.getElementById("A9").textContent= "bgcolor=" + "'" + lABCD[0][8] + "'"
+        document.getElementById("A10").textContent= "bgcolor=" + "'" + lABCD[0][9] + "'"
+        document.getElementById("A11").textContent= "bgcolor=" + "'" + lABCD[0][10] + "'"
+        document.getElementById("A12").textContent= "bgcolor=" + "'" + lABCD[0][11] + "'"
+        document.getElementById("A13").textContent= "bgcolor=" + "'" + lABCD[0][12] + "'"
+        document.getElementById("B1").textContent= "bgcolor=" + "'" + lABCD[1][0] + "'"
+        document.getElementById("B2").textContent= "bgcolor=" + "'" + lABCD[1][1] + "'"
+        document.getElementById("B3").textContent= "bgcolor=" + "'" + lABCD[1][2] + "'"
+        document.getElementById("B4").textContent= "bgcolor=" + "'" + lABCD[1][3] + "'"
+        document.getElementById("B5").textContent= "bgcolor=" + "'" + lABCD[1][4] + "'"
+        document.getElementById("B6").textContent= "bgcolor=" + "'" + lABCD[1][5] + "'"
+        document.getElementById("B7").textContent= "bgcolor=" + "'" + lABCD[1][6] + "'"
+        document.getElementById("B8").textContent= "bgcolor=" + "'" + lABCD[1][7] + "'"
+        document.getElementById("B9").textContent= "bgcolor=" + "'" + lABCD[1][8] + "'"
+        document.getElementById("B10").textContent= "bgcolor=" + "'" + lABCD[1][9] + "'"
+        document.getElementById("B11").textContent= "bgcolor=" + "'" + lABCD[1][10] + "'"
+        document.getElementById("B12").textContent= "bgcolor=" + "'" + lABCD[1][11] + "'"
+        document.getElementById("B13").textContent= "bgcolor=" + "'" + lABCD[1][12] + "'"
+        document.getElementById("C1").textContent= "bgcolor=" + "'" + lABCD[2][0] + "'"
+        document.getElementById("C2").textContent= "bgcolor=" + "'" + lABCD[2][1] + "'"
+        document.getElementById("C3").textContent= "bgcolor=" + "'" + lABCD[2][2] + "'"
+        document.getElementById("C4").textContent= "bgcolor=" + "'" + lABCD[2][3] + "'"
+        document.getElementById("C5").textContent= "bgcolor=" + "'" + lABCD[2][4] + "'"
+        document.getElementById("C6").textContent= "bgcolor=" + "'" + lABCD[2][5] + "'"
+        document.getElementById("C7").textContent= "bgcolor=" + "'" + lABCD[2][6] + "'"
+        document.getElementById("C8").textContent= "bgcolor=" + "'" + lABCD[2][7] + "'"
+        document.getElementById("C9").textContent= "bgcolor=" + "'" + lABCD[2][8] + "'"
+        document.getElementById("C10").textContent= "bgcolor=" + "'" + lABCD[2][9] + "'"
+        document.getElementById("C11").textContent= "bgcolor=" + "'" + lABCD[2][10] + "'"
+        document.getElementById("C12").textContent= "bgcolor=" + "'" + lABCD[2][11] + "'"
+        document.getElementById("C13").textContent= "bgcolor=" + "'" + lABCD[2][12] + "'"
+        document.getElementById("D1").textContent= "bgcolor=" + "'" + lABCD[3][0] + "'"
+        document.getElementById("D2").textContent= "bgcolor=" + "'" + lABCD[3][1] + "'"
+        document.getElementById("D3").textContent= "bgcolor=" + "'" + lABCD[3][2] + "'"
+        document.getElementById("D4").textContent= "bgcolor=" + "'" + lABCD[3][3] + "'"
+        document.getElementById("D5").textContent= "bgcolor=" + "'" + lABCD[3][4] + "'"
+        document.getElementById("D6").textContent= "bgcolor=" + "'" + lABCD[3][5] + "'"
+        document.getElementById("D7").textContent= "bgcolor=" + "'" + lABCD[3][6] + "'"
+        document.getElementById("D8").textContent= "bgcolor=" + "'" + lABCD[3][7] + "'"
+        document.getElementById("D9").textContent= "bgcolor=" + "'" + lABCD[3][8] + "'"
+        document.getElementById("D10").textContent= "bgcolor=" + "'" + lABCD[3][9] + "'"
+        document.getElementById("D11").textContent= "bgcolor=" + "'" + lABCD[3][10] + "'"
+        document.getElementById("D12").textContent= "bgcolor=" + "'" + lABCD[3][11] + "'"
+        document.getElementById("D13").textContent= "bgcolor=" + "'" + lABCD[3][12] + "'"
+        
     }
 </script>
 <table class="border" border="1">
     <script>
         document.write('<tr>');
-        for(var i=1; i <= 10; i++){
-            document.write('<th>♤'+ i +' </th>');
-        }
-        document.write('<th>♤'+ "J" +' </th>');
-        document.write('<th>♤'+ "Q" +' </th>');
-        document.write('<th>♤'+ "K" +' </th>');
+        document.write('<th id="A1">♤'+ "1" +' </th>');
+        document.write('<th id="A2">♤'+ "2" +' </th>');
+        document.write('<th id="A3">♤'+ "3" +' </th>');
+        document.write('<th id="A4">♤'+ "4" +' </th>');
+        document.write('<th id="A5">♤'+ "5" +' </th>');
+        document.write('<th id="A6">♤'+ "6" +' </th>');
+        document.write('<th id="A7">♤'+ "7" +' </th>');
+        document.write('<th id="A8">♤'+ "8" +' </th>');
+        document.write('<th id="A9">♤'+ "9" +' </th>');
+        document.write('<th id="A10">♤'+ "10" +' </th>');
+        document.write('<th id="A11">♤'+ "J" +' </th>');
+        document.write('<th id="A12">♤'+ "Q" +' </th>');
+        document.write('<th id="A13">♤'+ "K" +' </th>');
         document.write('</tr>');
+        
         document.write('<tr>');
-        for(var i=1; i <= 10; i++){
-            document.write('<th>♧'+ i +' </th>');
-        }
-        document.write('<th>♧'+ "J" +' </th>');
-        document.write('<th>♧'+ "Q" +' </th>');
-        document.write('<th>♧'+ "K" +' </th>');
+        document.write('<th id="B1">♧'+ "1" +' </th>');
+        document.write('<th id="B2">♧'+ "2" +' </th>');
+        document.write('<th id="B3">♧'+ "3" +' </th>');
+        document.write('<th id="B4">♧'+ "4" +' </th>');
+        document.write('<th id="B5">♧'+ "5" +' </th>');
+        document.write('<th id="B6">♧'+ "6" +' </th>');
+        document.write('<th id="B7">♧'+ "7" +' </th>');
+        document.write('<th id="B8">♧'+ "8" +' </th>');
+        document.write('<th id="B9">♧'+ "9" +' </th>');
+        document.write('<th id="B10">♧'+ "10" +' </th>');
+        document.write('<th id="B11">♧'+ "J" +' </th>');
+        document.write('<th id="B12">♧'+ "Q" +' </th>');
+        document.write('<th id="B13">♧'+ "K" +' </th>');
         document.write('</tr>');
+        
         document.write('<tr>');
-        for(var i=1; i <= 10; i++){
-            document.write('<th>♡'+ i +' </th>');
-        }
-        document.write('<th>♡'+ "J" +' </th>');
-        document.write('<th>♡'+ "Q" +' </th>');
-        document.write('<th>♡'+ "K" +' </th>');
+        document.write('<th id="C1">♡'+ "1" +' </th>');
+        document.write('<th id="C2">♡'+ "2" +' </th>');
+        document.write('<th id="C3">♡'+ "3" +' </th>');
+        document.write('<th id="C4">♡'+ "4" +' </th>');
+        document.write('<th id="C5">♡'+ "5" +' </th>');
+        document.write('<th id="C6">♡'+ "6" +' </th>');
+        document.write('<th id="C7">♡'+ "7" +' </th>');
+        document.write('<th id="C8">♡'+ "8" +' </th>');
+        document.write('<th id="C9">♡'+ "9" +' </th>');
+        document.write('<th id="C10">♡'+ "10" +' </th>');
+        document.write('<th id="C11">♡'+ "J" +' </th>');
+        document.write('<th id="C12">♡'+ "Q" +' </th>');
+        document.write('<th id="C13">♡'+ "K" +' </th>');
         document.write('</tr>');
+        
         document.write('<tr>');
-        for(var i=1; i <= 10; i++){
-            document.write('<th>♢'+ i +' </th>');
-        }
-        document.write('<th>♢'+ "J" +' </th>');
-        document.write('<th>♢'+ "Q" +' </th>');
-        document.write('<th>♢'+ "K" +' </th>');
+        document.write('<th id="D1">♢'+ "1" +' </th>');
+        document.write('<th id="D2">♢'+ "2" +' </th>');
+        document.write('<th id="D3">♢'+ "3" +' </th>');
+        document.write('<th id="D4">♢'+ "4" +' </th>');
+        document.write('<th id="D5">♢'+ "5" +' </th>');
+        document.write('<th id="D6">♢'+ "6" +' </th>');
+        document.write('<th id="D7">♢'+ "7" +' </th>');
+        document.write('<th id="D8">♢'+ "8" +' </th>');
+        document.write('<th id="D9">♢'+ "9" +' </th>');
+        document.write('<th id="D10">♢'+ "10" +' </th>');
+        document.write('<th id="D11">♢'+ "J" +' </th>');
+        document.write('<th id="D12">♢'+ "Q" +' </th>');
+        document.write('<th id="D13">♢'+ "K" +' </th>');
         document.write('</tr>');
+        
+
     </script>
 </table>
 </body>
