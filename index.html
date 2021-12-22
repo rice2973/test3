@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <tittle>checkout</title>
+    <tittle>check</title>
 </head>
 <body>
 <div>Teachable Machine Image Model</div>
@@ -51,8 +51,10 @@
         document.getElementById("webcam-container").appendChild(webcam.canvas);
         labelContainer = document.getElementById("label-container");
         labelContainer2 = document.getElementById("label-container");
-        for (let i = 0; i < maxPredictions; i++) { // and class labels
+        for (let i = 0; i < 5; i++) { // and class labels
             labelContainer.appendChild(document.createElement("div"));
+        }
+        for (let j = 0; j < 14; j++) {
             labelContainer2.appendChild(document.createElement("div"));
         }
     }
@@ -69,7 +71,7 @@
         const prediction = await model.predict(webcam.canvas);
         const prediction2 = await model2.predict(webcam.canvas);
         ank = "何も"
-        for (let i = 0; i < maxPredictions; i++) {
+        for (let i = 0; i < 5; i++) {
             if (i == 1){
                 ten = "クローバー"
             }
@@ -102,9 +104,14 @@
                     ank = "何も"
                 }
             }
-            //const classPrediction =
-            //    ten + ": " + prediction[i].probability.toFixed(2);
-            //labelContainer.childNodes[i].innerHTML = classPrediction;
+            const classPrediction =
+                ten + ": " + prediction[i].probability.toFixed(2);
+            labelContainer.childNodes[i].innerHTML = classPrediction;
+        }
+        for (let i = 0; i < 14; i++) {
+            const classPrediction =
+                prediction[i].className + ": " + prediction[i].probability.toFixed(2);
+            labelContainer.childNodes[i].innerHTML = classPrediction;
         }
         document.getElementById("debuk").textContent=ank
     }
