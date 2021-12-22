@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <tittle>checkin</title>
+    <tittle>check</title>
 </head>
 <body>
 <div>Teachable Machine Image Model</div>
@@ -71,7 +71,7 @@
         const prediction = await model.predict(webcam.canvas);
         const prediction2 = await model2.predict(webcam.canvas);
         ank = "何も"
-        for (let i = 0; i < 5; i++) {
+        for (let i = 0; i < maxPredictions; i++) {
             if (i == 1){
                 ten = "クローバー"
             }
@@ -82,38 +82,88 @@
                 ten = "ダイヤ"
             }
             else if (i == 4){
-                ten = "何も"
+                ten = "何もっ"
             }
             else{
                 ten = "スペード"
             }
             if (prediction[i].probability.toFixed(2) > 0.8){
                 if (i == 1){
-                    ank = "クローバー"
+                    ank = ""
                 }
                 else if (i == 2){
-                    ank = "ハート"
+                    ank = "♡"
                 }
                 else if (i == 3){
-                    ank = "ダイヤ"
+                    ank = "♢"
                 }
                 else if (i == 0){
-                    ank = "スペード"
+                    ank = "♤"
                 }
                 else{
-                    ank = "何も"
+                    ank = "何もっ"
                 }
             }
             const classPrediction =
                 ten + ": " + prediction[i].probability.toFixed(2);
             labelContainer.childNodes[i].innerHTML = classPrediction;
         }
-        for (let i = 0; i < 14; i++) {
+        tal = " "
+        for (let j = 0; j < maxPredictions2; j++) {
+            if (prediction2[j].probability.toFixed(2) > 0.8){
+                if (j == 0){
+                    tal = "1"
+                }
+                else if (j == 1){
+                    tal = "2"
+                }
+                else if (j == 2){
+                    tal = "3"
+                }
+                else if (j == 3){
+                    tal = "4"
+                }
+                else if (j == 4){
+                    tal = "5"
+                }
+                else if (j == 5){
+                    tal = "6"
+                }
+                else if (j == 6){
+                    tal = "7"
+                }
+                else if (j == 7){
+                    tal = "8"
+                }
+                else if (j == 8){
+                    tal = "9"
+                }
+                else if (j == 9){
+                    tal = "10"
+                }
+                else if (j == 10){
+                    tal = "J"
+                }
+                else if (j == 11){
+                    tal = "Q"
+                }
+                else if (j == 12){
+                    tal = "K"
+                }
+                else if (j == 13){
+                    tal = " "
+                }
+            }
+            
             const classPrediction2 =
-                prediction2[i].className + ": " + prediction2[i].probability.toFixed(2);
-            labelContainer.childNodes[i].innerHTML = classPrediction2;
+                prediction2[j].className + ": " + prediction2[i].probability.toFixed(2);
+            labelContainer.childNodes[j].innerHTML = classPrediction2;
         }
-        document.getElementById("debuk").textContent=ank
+        if (ank == "何もっ"&& tal == " "){
+            ank = "何もっ"
+            tal = "なかった"
+        }
+        document.getElementById("debuk").textContent=ank + tal
     }
 </script>
 </body>
