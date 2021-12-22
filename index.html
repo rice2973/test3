@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <tittle>checkon</title>
+    <tittle>check</title>
 </head>
 <body>
 <div>Teachable Machine Image Model</div>
@@ -70,7 +70,8 @@
         // predict can take in an image, video or canvas html element
         const prediction = await model.predict(webcam.canvas);
         const prediction2 = await model2.predict(webcam.canvas);
-        ank = "何も"
+        ank = "何もっ"
+        tal = "なかった"
         for (let i = 0; i < maxPredictions; i++) {
             if (i == 1){
                 ten = "クローバー"
@@ -89,7 +90,7 @@
             }
             if (prediction[i].probability.toFixed(2) > 0.8){
                 if (i == 1){
-                    ank = ""
+                    ank = "何もっ"
                 }
                 else if (i == 2){
                     ank = "♡"
@@ -108,7 +109,7 @@
                 ten + ": " + prediction[i].probability.toFixed(2);
             labelContainer.childNodes[i].innerHTML = classPrediction;
         }
-        tal = " "
+        tal = "なかった"
         for (let j = 0; j < maxPredictions2; j++) {
             if (prediction2[j].probability.toFixed(2) > 0.8){
                 if (j == 0){
@@ -151,7 +152,7 @@
                     tal = "K"
                 }
                 else if (j == 13){
-                    tal = " "
+                    tal = "なかった"
                 }
             }
             
@@ -159,7 +160,7 @@
                 prediction2[j].className + ": " + prediction2[j].probability.toFixed(2);
             labelContainer.childNodes[j].innerHTML = classPrediction2;
         }
-        if (ank == "何もっ"&& tal == " "){
+        if (ank == "何もっ" || tal == " "){
             ank = "何もっ"
             tal = "なかった"
         }
