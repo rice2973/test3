@@ -59,10 +59,26 @@
         // predict can take in an image, video or canvas html element
         const prediction = await model.predict(webcam.canvas);
         for (let i = 0; i < maxPredictions; i++) {
-            const classPrediction =
-                prediction[i].className + ": " + "1 " //prediction[i].probability.toFixed(2);
-            labelContainer.childNodes[i].innerHTML = classPrediction;
+            if (i == 1){
+                ten = "♠"
+            }
+            else if (i == 2){
+                ten = "クローバー"
+            }
+            else if (i == 3){
+                ten = "ハート"
+            }
+            else if (i == 4){
+                ten = "ダイヤ"
+            }
+            else{
+                ten = "何も"
+            }
         }
+        const classPrediction =
+            ten + ": " + prediction[i].probability.toFixed(2);
+        labelContainer.childNodes[i].innerHTML = classPrediction;
+        
     }
 </script>
 </body>
