@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <tittle>check</title>
+    <tittle>checkout</title>
 </head>
 <body>
 <div>Teachable Machine Image Model</div>
@@ -178,7 +178,8 @@
         lDJ = DJ.toFixed(2);
         lDQ = DQ.toFixed(2);
         lDK = DK.toFixed(2);
-        
+        for (i = 0; i < 4; i++)
+        {
         if (prediction[i].probability.toFixed(2) > 0.8){
             if (i == 1){
                 ank = "♧"
@@ -196,6 +197,8 @@
                 ank = "何もっ"
             }
         }
+        }
+        for (j = 0; j < 14; j++)
         if (prediction2[j].probability.toFixed(2) > 0.8){
             if (j == 0){
                 tal = "1"
@@ -239,7 +242,7 @@
             else if (j == 13){
                 tal = "なかった"
             }
-              
+        }
         }
         if (ank == "何もっ" || tal == "なかった"){
             ank = "何もっ"
