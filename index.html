@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <tittle>checkghj</title>
+    <tittle>check</title>
 </head>
 <body>
 <div>Teachable Machine Image Model</div>
@@ -61,19 +61,19 @@
         const prediction = await model.predict(webcam.canvas);
         for (let i = 0; i < maxPredictions; i++) {
             if (i == 1){
-                ten = "♠"
-            }
-            else if (i == 2){
                 ten = "クローバー"
             }
-            else if (i == 3){
+            else if (i == 2){
                 ten = "ハート"
             }
-            else if (i == 4){
+            else if (i == 3){
                 ten = "ダイヤ"
             }
-            else{
+            else if (i == 4){
                 ten = "何も"
+            }
+            else{
+                ten = "スペード"
             }
         
             const classPrediction =
