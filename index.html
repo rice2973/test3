@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <tittle>check</title>
+    <tittle>checkin</title>
 </head>
 <body>
 <div>Teachable Machine Image Model</div>
@@ -75,12 +75,28 @@
             else{
                 ten = "スペード"
             }
-        
-            const classPrediction =
-                ten + ": " + prediction[i].probability.toFixed(2);
-            labelContainer.childNodes[i].innerHTML = classPrediction;
+            if (prediction[i].probability.toFixed(2) > 0.8){
+                if (i == 1){
+                    ank = "クローバー"
+                }
+                else if (i == 2){
+                    ank = "ハート"
+                }
+                else if (i == 3){
+                    ank = "ダイヤ"
+                }
+                else if (i == 0){
+                    ank = "スペード"
+                }
+                else{
+                    ank = "何も"
+                }
+            }
+            //const classPrediction =
+            //    ten + ": " + prediction[i].probability.toFixed(2);
+            //labelContainer.childNodes[i].innerHTML = classPrediction;
         }
-        document.getElementById("debuk").textContent=ten
+        document.getElementById("debuk").textContent=ank
     }
 </script>
 </body>
