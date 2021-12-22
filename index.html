@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <tittle>checkout</title>
+    <tittle>check</title>
 </head>
 <body>
 <div>Teachable Machine Image Model</div>
@@ -67,7 +67,8 @@
     }
 
     // run the webcam image through the image model
-    async function predict() {
+    async function predict() 
+    {
         // predict can take in an image, video or canvas html element
         const prediction = await model.predict(webcam.canvas);
         const prediction2 = await model2.predict(webcam.canvas);
@@ -180,71 +181,94 @@
         lDK = DK.toFixed(2);
         for (i = 0; i < 4; i++)
         {
-        if (prediction[i].probability.toFixed(2) > 0.8){
-            if (i == 1){
-                ank = "♧"
+            if (prediction[i].probability.toFixed(2) > 0.8)
+            {
+                if (i == 1)
+                {
+                    ank = "♧"
+                }
+                else if (i == 2)
+                {
+                    ank = "♡"
+                }
+                else if (i == 3)
+                {
+                    ank = "♢"
+                }
+                else if (i == 0)
+                {
+                    ank = "♤"
+                }
+                else
+                {
+                    ank = "何もっ"
+                }
             }
-            else if (i == 2){
-                ank = "♡"
-            }
-            else if (i == 3){
-                ank = "♢"
-            }
-            else if (i == 0){
-                ank = "♤"
-            }
-            else{
-                ank = "何もっ"
-            }
-        }
         }
         for (j = 0; j < 14; j++)
-        if (prediction2[j].probability.toFixed(2) > 0.8){
-            if (j == 0){
-                tal = "1"
-            }
-            else if (j == 1){
-                tal = "2"
-            }
-            else if (j == 2){
-                tal = "3"
-            }
-            else if (j == 3){
-                tal = "4"
-            }
-            else if (j == 4){
-                tal = "5"
-            }
-            else if (j == 5){
-                tal = "6"
-            }
-            else if (j == 6){
-                tal = "7"
-            }
-            else if (j == 7){
-                tal = "8"
-            }
-            else if (j == 8){
-                tal = "9"
-            }
-            else if (j == 9){
-                tal = "10"
-            }
-            else if (j == 10){
-                tal = "J"
-            }
-            else if (j == 11){
-                tal = "Q"
-            }
-            else if (j == 12){
-                tal = "K"
-            }
-            else if (j == 13){
-                tal = "なかった"
+        {
+            if (prediction2[j].probability.toFixed(2) > 0.8)
+            {
+                if (j == 0)
+                {
+                    tal = "1"
+                }
+                else if (j == 1)
+                {
+                    tal = "2"
+                }
+                else if (j == 2)
+                {
+                    tal = "3"
+                }
+                else if (j == 3)
+                {
+                    tal = "4"
+                }
+                else if (j == 4)
+                {
+                    tal = "5"
+                }
+                else if (j == 5)
+                {
+                    tal = "6"
+                }
+                else if (j == 6)
+                {
+                    tal = "7"
+                }
+                else if (j == 7)
+                {
+                    tal = "8"
+                }
+                else if (j == 8)
+                {
+                    tal = "9"
+                }
+                else if (j == 9)
+                {
+                    tal = "10"
+                }
+                else if (j == 10)
+                {
+                    tal = "J"
+                }
+                else if (j == 11)
+                {
+                    tal = "Q"
+                }
+                else if (j == 12)
+                {
+                    tal = "K"
+                }
+                else if (j == 13)
+                {
+                    tal = "なかった"
+                }
             }
         }
-        }
-        if (ank == "何もっ" || tal == "なかった"){
+        if (ank == "何もっ" || tal == "なかった")
+        {
             ank = "何もっ"
             tal = "なかった"
         }
