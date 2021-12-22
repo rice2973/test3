@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <tittle>checkoutin</title>
+    <tittle>checkout</title>
 </head>
 <body>
 <div>Teachable Machine Image Model</div>
@@ -68,6 +68,7 @@
         // predict can take in an image, video or canvas html element
         const prediction = await model.predict(webcam.canvas);
         const prediction2 = await model2.predict(webcam.canvas);
+        ank = "何も"
         for (let i = 0; i < maxPredictions; i++) {
             if (i == 1){
                 ten = "クローバー"
@@ -84,7 +85,6 @@
             else{
                 ten = "スペード"
             }
-            ank = "何も"
             if (prediction[i].probability.toFixed(2) > 0.8){
                 if (i == 1){
                     ank = "クローバー"
