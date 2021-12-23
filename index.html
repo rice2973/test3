@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <tittle>checkon</title>
+    <tittle>check</title>
 </head>
 <body>
 <div>Teachable Machine Image Model</div>
@@ -170,20 +170,38 @@
                 }
                 else if (ABCD[i][j] >= 0.3 && ABCD[i][j] < 0.4)
                 {
+                    if (bo[i][j] != 250)
+                    {
                     lABCD[i][j] = "#808080";
-                }else if (ABCD[i][j] >= 0.4 && ABCD[i][j] < 0.5)
+                    }
+                }
+                else if (ABCD[i][j] >= 0.4 && ABCD[i][j] < 0.5)
                 {
+                    if (bo[i][j] != 250)
+                    {
                     lABCD[i][j] = "#a9a9a9";
-                }else if (ABCD[i][j] >= 0.5 && ABCD[i][j] < 0.6)
+                    }
+                }
+                else if (ABCD[i][j] >= 0.5 && ABCD[i][j] < 0.6)
                 {
+                    if (bo[i][j] != 250)
+                    {
                     lABCD[i][j] = "#c0c0c0";
-                }else if (ABCD[i][j] >= 0.6 && ABCD[i][j] < 0.7)
+                    }
+                }
+                else if (ABCD[i][j] >= 0.6 && ABCD[i][j] < 0.7)
                 {
+                    if (bo[i][j] != 250)
+                    {
                     lABCD[i][j] = "#d3d3d3";
+                    }
                 }
                 else if (ABCD[i][j] >= 0.7 && ABCD[i][j] < 0.8)
                 {
+                    if (bo[i][j] != 250)
+                    {
                     lABCD[i][j] = "#dcdcdc";
+                    }
                 }
                 else if (ABCD[i][j] >= 0.8 && ABCD[i][j] < 0.9)
                 {
@@ -193,16 +211,16 @@
                 {
                     lABCD[i][j] = "#ffffff";
                 }
-                if (ABCD[i][j] < 0.9)
+                if (ABCD[i][j] < 0.8)
                 {
-                    if (bo[i][j] < 200)
+                    if (bo[i][j] < 2)
                     {
                         bo[i][j] = 0;
                     }
                 }
-                if (ABCD[i][j] >= 0.9)
+                else if (ABCD[i][j] >= 0.8)
                 {
-                    if (bo[i][j] < 200)
+                    if (bo[i][j] < 2)
                     {
                         ++bo[i][j];
                     }
